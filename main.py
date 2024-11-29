@@ -1,33 +1,34 @@
-# Weight calculator
+# Logical operators = evaluate multiple conditions (or, and, not)
+#             or = at least one condition must be True
+#             and = both conditions must be True
+#             not = inverts the condition (not False, not True)
 
-# weight = float(input("Enter your weight: "))
-# unit = input("Kilogram or Pounds? (K or L): ")
+# temp = 34
+# is_raining = False
 #
-# if unit == "K" or unit == "k":
-#     weight = weight * 2.205
-#     unit = "Lbs"
-#     print(f"Your weight is: {round(weight, 2)} {unit}")
-#
-# elif unit == "L" or unit == "l":
-#     weight = weight / 2.205
-#     unit = "Kgs"
-#     print(f"Your weight is: {round(weight, 2)} {unit}")
-#
+# if temp >= 35 or temp <= 0 or is_raining:
+#     print("The outdoor event is cancelled!!!")
 # else:
-#     print(f"{unit} was not valid")
+#     print("The outdoor event is still scheduled")
 
-# print(f"Your weight is: {round(weight, 2)} {unit}")
+temp = 20
+is_sunny = False
 
-# ======= Tempurature Conversion ========
-
-unit = input("Is the temperature in Celsius or Fahrenheit (C/F): ")
-temp = float(input("Enter the temperature: "))
-
-if unit == "c":
-    temp = round((9 * temp) / 5 + 32, 1)
-    print(f"The temperature in Fahrenheit is {temp}°F")
-elif unit == "f":
-    temp = round((temp - 32) * 5 / 9, 1)
-    print(f"The temperature in Fahrenheit is {temp}°C")
-else:
-    print(f"{unit} is an invalid unit of measurement")
+if temp >= 35 and is_sunny:
+    print("It is HOT outside 🥵")
+    print("It's SUNNY ☀️")
+elif temp <= 5 and is_sunny:
+    print("It's COLD outside")
+    print("It's SUNNY☀️")
+elif 28 > temp > 0 and is_sunny:
+    print("It's WARM outside")
+    print("It's SUNNY☀️☀")
+elif temp >= 28 and not is_sunny:
+    print("It's HOT outside 🥵")
+    print("It's CLOUDY☁️")
+elif temp <= 5 and not is_sunny:
+    print("It's COLD outside")
+    print("It's CLOUDY☁️")
+elif 28 > temp > 0 and not is_sunny:
+    print("It's WARM outside")
+    print("It's CLOUDY☁️")
