@@ -1,62 +1,37 @@
-# name = input("enter your full name: ")
-# phone_number = input("enter your phoneNumber: ")
-
-# result = len(name)
-# result = name.find("r")
-# result = name.rfind("r")
-# result = name.capitalize()
-# result = name.upper()
-# result = name.lower()
-# result = name.isalpha()
-# result = name.isdigit()
-# result = phone_number.count("-")
-# phone_number = phone_number.replace("-", "")
-
-
-
-# ism = "Anvarjon"
-# result = name.replace(name, ism)
-# print(f"Do not lie!!! Your name is {ism}")
-
-
-
-# print(phone_number)
-
-# print(help(str))
-
-# =========------TASK-----=========
-
-# username = input("Enter a username:")
+# price1  = 3300.21233
+# price2 = -223.22
+# price3 =  22.122
 #
-# if len(username) >= 12:
-#     print("There 12 characters")
-# #     BELOW IS also true. It works!!!
-# # elif not username.find(" ") == -1:
-# elif " " in username:
-#     print("There is space")
-# elif not username.isalpha():
-#     print("There're some digits")
-# else:
-#     print(f"You have successfully regisreted!!! WELCOME {username}")
+# print(f"Price1 is ${price1:.2f}")
+# print(f"Price2 is ${price2:.2f}")
+# print(f"Price3 is ${price3:.3f}")
 
 
-# ===============-------------- STRING INDEXING -------------==================
 
-# indexing  = accessing elements of a sequence using [] (indexing operators)
-#  [start: end: step]
+# ======----- WHILE LOOP -----========
 
-credit_number = '1234-5678-9012-3456'
 
-# print(credit_number[0])
-# print(credit_number[:4])
-# print(credit_number[5:9])
-# print(credit_number[5:])
-# print(credit_number[-1])
-# print(credit_number[::2])
+# name = input("Enter your name: ")
+#
+# while name == "":
+#     print("You didn't enter your name!!!")
+#     name = input("Enter your name: ")
+#
+# print(f"Hello {name}!")
 
-# last_digits = credit_number[-4:]
-# print(f"XXXX-XXXX-XXXX-{last_digits}")
+# age = int(input("Enter your age: "))
+#
+# while age < 0:
+#     print("Age can't be negative!!!")
+#     age = int(input("Enter your age: "))
+#
+# print(f"You're {age} years old!")
 
-# it shows on reverse form!!!
-last_digits = credit_number[::-1]
-print(last_digits)
+num = int(input("Enter a # between 1 - 10: "))
+
+while num < 1 or num > 10:
+    print(f"{num} is not valid!!!")
+    num = int(input("Enter a # between 1 - 10: "))
+
+
+print(f"Your number is {num} !")
