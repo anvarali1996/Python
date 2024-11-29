@@ -1,24 +1,30 @@
-# age = int(input("Enter your age: "))
-#
-# if age >= 100:
-#     print("You're too old to sign up")
-# elif age >= 18:
-#     print("You're now signed up!")
-# elif age <= 0:
-#     print("You haven't been born yet!")
-# else:
-#     print("You must be at least 18 to sign up!!!")
-#
-response = input("Would you like food? (Y/N): ")
+# Python calculator
 
-if response == "Yes" or response == 'yes':
-    print("Have some food")
+operator = input("Enter operator (+ - * /): ")
+
+num1 = float(input("Enter the 1st number: "))
+num2 = float(input("Enter the 2nd number: "))
+
+if operator == "+":
+    result = num1 + num2
+    print(round(result, 2))
+    # print(num1 + num2)
+elif operator == "-":
+    result = num1 - num2
+    print(round(result, 2))
+    # print(num1 - num2)
+elif operator == "*":
+    result = num1 * num2
+    print(round(result, 2))
+    # print(num1 * num2)
+elif operator == "/":
+    result = num1 / num2
+    print(round(result, 2))
+    # print(num1 / num2)
 else:
-    print("No food for you:)")
+    print("Please write these 4 emblems")
 
-# name = input("what's your name?")
-# if name == "":
-#     print("You did not write your name")
-# else:
-#     print(f"Nice to meet you {name}")
+
+
+
 
