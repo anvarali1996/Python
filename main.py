@@ -1,40 +1,68 @@
-# Typecasting = the process of converting a variable from type to
-#  str(), int(), float(), bool()
-
-# name = "Anvarjon"
-# age = 28
-# gpa = 3.8
-# is_student = False
 #
-# name = bool(name)
-# age = intf(gpa)
-# # print(type(name))
-# # print(str(age))
-# # print(int(gpa))
-# # print(type(is_student))
+# adjective1 = input("enter an adjective (description)")
+# noun1 = input("enter a noun (person, place or thing")
+# adjective2 = input("enter an adjective (description)")
+# verb1 = input("enter a verb ending 'ing' ")
+# adjective3 = input("enter an adjective (description)")
 #
-# print(age)
-
-# ==============------ INPUT ------=================
-# name = input("What is your name?")
-# age = input("How old are you?")
 #
-# age = int(age)
-# age = age + 1
-# print(f"Hello {name}!!!")
-# print("Happy BIRTHDAY")
-# print(f"You are {age} years old!")
+# print(f"Today I went to a {adjective1} zoo.")
+# print(f"In an exhibit, I saw a {noun1}")
+# print(f"{noun1} was {adjective2} and {verb1}")
+# print(f"I was  {adjective3}")
 
-# length = int(input("Enter length: "))
-# width = int(input("Enter width: "))
-# area = length * width
+# friends = 10
+# friends = friends / 2
+# friends -=2
+# friends *=4
+# ramainder = friends + 5
+# print(ramainder)
+
+
+# x = 3.14
+# y = 4
+# z = 5
+
+# result = round(x)
+# result = abs(y)
+# result = pow(5, 3)
+# result = max(x, y, z)
+# result = min(x, y, z)
+
+# print(result)
+
+# import math
+
+# x = 25.4
+# print(math.pi)
+# print(math.e)
+# result = math.sqrt(x)
+# result = math.ceil(x)
+# result = math.floor(x)
+
+# print(result)
+
+# import math
 #
-# print(f"Are is {area}m²")
+# radius = float(input("Enter the radius of circle"))
+#
+# circumference = 2 * math.pi * radius
+#
+# print(f"The circumference is: {round(circumference, 4)}cm")
 
-item = input("What item would you like to buy?: ")
-price = float(input("What is the price?: "))
-quantity = int(input("How many would you like?"))
-total = price * quantity
+# import math
+#
+# radius = float(input("Enter the radius of circle"))
+#
+# area = math.pi * pow(radius, 2)
+#
+# print(f"The area is: {round(area, 4)}cm²")
 
-print(f"you have bought {quantity} x {item}/s")
-print(f"Your total is: $ {total}")
+import math
+
+a = float(input("Enter side A: "))
+b = float(input("Enter side B: "))
+
+c = math.sqrt(pow(a, 2) + pow(b, 2))
+
+print(f"Side C = {c}")
