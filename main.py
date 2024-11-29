@@ -1,30 +1,33 @@
-# Python calculator
+# Weight calculator
 
-operator = input("Enter operator (+ - * /): ")
+# weight = float(input("Enter your weight: "))
+# unit = input("Kilogram or Pounds? (K or L): ")
+#
+# if unit == "K" or unit == "k":
+#     weight = weight * 2.205
+#     unit = "Lbs"
+#     print(f"Your weight is: {round(weight, 2)} {unit}")
+#
+# elif unit == "L" or unit == "l":
+#     weight = weight / 2.205
+#     unit = "Kgs"
+#     print(f"Your weight is: {round(weight, 2)} {unit}")
+#
+# else:
+#     print(f"{unit} was not valid")
 
-num1 = float(input("Enter the 1st number: "))
-num2 = float(input("Enter the 2nd number: "))
+# print(f"Your weight is: {round(weight, 2)} {unit}")
 
-if operator == "+":
-    result = num1 + num2
-    print(round(result, 2))
-    # print(num1 + num2)
-elif operator == "-":
-    result = num1 - num2
-    print(round(result, 2))
-    # print(num1 - num2)
-elif operator == "*":
-    result = num1 * num2
-    print(round(result, 2))
-    # print(num1 * num2)
-elif operator == "/":
-    result = num1 / num2
-    print(round(result, 2))
-    # print(num1 / num2)
+# ======= Tempurature Conversion ========
+
+unit = input("Is the temperature in Celsius or Fahrenheit (C/F): ")
+temp = float(input("Enter the temperature: "))
+
+if unit == "c":
+    temp = round((9 * temp) / 5 + 32, 1)
+    print(f"The temperature in Fahrenheit is {temp}°F")
+elif unit == "f":
+    temp = round((temp - 32) * 5 / 9, 1)
+    print(f"The temperature in Fahrenheit is {temp}°C")
 else:
-    print("Please write these 4 emblems")
-
-
-
-
-
+    print(f"{unit} is an invalid unit of measurement")
