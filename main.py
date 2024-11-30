@@ -1,19 +1,11 @@
-# for i in reversed(range(1, 11)):
-#     print(i)
-#
-# print("HAPPY SOMETHING!!!")
+import time
+my_time = int(input("Enter the time in seconds: "))
 
-# for i in range(1, 11, 3):
-#     print(i)
-#
-# print("HAPPY SOMETHING!!!")
+for i in range(my_time, 0, -1):
+    seconds = i % 60
+    minutes = int(i / 60) % 60
+    hours = int(i / 3600)
+    print(f"{hours:02}: {minutes:02}:{seconds:02}")
+    time.sleep(1)
 
-# credit_card = "1234-5678-9012-3456"
-# for i in credit_card:
-#     print(i)
-
-for x in range(1, 21):
-    if x == 13:
-        break
-    else:
-        print(x)
+print("TIME IS UP!!!")
