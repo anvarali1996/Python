@@ -1,25 +1,19 @@
-# Python calculator
+# for i in reversed(range(1, 11)):
+#     print(i)
+#
+# print("HAPPY SOMETHING!!!")
 
-operator = input("Enter operator (+ - * /): ")
+# for i in range(1, 11, 3):
+#     print(i)
+#
+# print("HAPPY SOMETHING!!!")
 
-num1 = float(input("Enter the 1st number: "))
-num2 = float(input("Enter the 2nd number: "))
+# credit_card = "1234-5678-9012-3456"
+# for i in credit_card:
+#     print(i)
 
-if operator == "+":
-    result = num1 + num2
-    print(round(result, 2))
-    # print(num1 + num2)
-elif operator == "-":
-    result = num1 - num2
-    print(round(result, 2))
-    # print(num1 - num2)
-elif operator == "*":
-    result = num1 * num2
-    print(round(result, 2))
-    # print(num1 * num2)
-elif operator == "/":
-    result = num1 / num2
-    print(round(result, 2))
-    # print(num1 / num2)
-else:
-    print("Please write these 4 emblems")
+for x in range(1, 21):
+    if x == 13:
+        break
+    else:
+        print(x)
