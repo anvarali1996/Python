@@ -1,43 +1,37 @@
-# Lists, Sets, Tuples
+#  ======--- DICTIONARY ---=====
 
-# fruits = ["apple", "orange", "banana", "coconut"]
-# print(dir(fruits))
-# print(len(fruits))
-# print(fruits[0::])
+capitals = {
+    'USA': "Washington D.C.",
+    "Uzbekistan": "Tashkent",
+    "Latvia": "Riga",
+    "UAE": "Abu Dhabi"
+}
 
-# fruits[0] = "pineapple"
-# fruits.append("pineapple")
-# fruits.remove("apple")
-# fruits.insert(1, "pineapple")
-# fruits.sort()
-# fruits.reverse()
-# fruits.clear()
-# print(fruits.index("apple"))
+# print(dir(capitals))
+# print(help(capitals))
+# print(capitals.get("Uzbekistan"))
 
-# for fruit in fruits:
-#     print(fruit)
+# if capitals.get("Lithuania"):
+#     print("Frontend developer is here")
+# else:
+#     print("Backend developer is no here")
 
+# capitals.update({"Germany": 'Berlin'})
+# capitals.update({"USA": 'New York'})
+# capitals.pop("USA")
+# capitals.popitem()
+# keys = capitals.keys()
 
-# ======////-------- SETS ------////=========
+# for keys in capitals.keys():
+#     print(keys)
 
-# fruits = {"apple", "orange", "banana", "coconut"}
+# below we can see the value (capital cities)
+# values = capitals.values()
+# print(values)
 
-# fruits.add("Pineapple")
-# fruits.remove("apple")
-# fruits.pop()
-# fruits.clear()
+# for values in capitals.values():
+#     print(values)
 
-
-# print(fruits)
-
-# ==========////////////---------- TUPLE -------////////////============
-
-fruits = ("apple", "orange", "banana", "coconut", "apple")
-
-# print(fruits.index("orange"))
-# print(fruits.count("apple"))
-
-# print(fruits)
-
-for fruit in fruits:
-    print(fruit)
+# ITEMS
+for key, value in capitals.items():
+    print(f"{key}: {value}")
