@@ -1,48 +1,47 @@
-# import random
+# def happy_birthday(name, age):
+#     print(f"Happy birthday to you! {name}")
+#     print(f"You're {age} years old")
 #
-# low = 1
-# high = 100
-# options = ("rock", "scissors", "paper")
-# cards = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
+# happy_birthday("Anvarjon", 25)
+# happy_birthday("Nurmuhammad", 2)
+
+# def display_invoice(username, amount, due_date):
+#     print(f"Hello {username}!")
+#     print(f"Your bill of ${amount:.2f} is due: {due_date}")
 #
-# # number = random.randint(low, high)
-# # number = random.random()
-# # options = random.choice(options)
-# random.shuffle(cards)
+# display_invoice("anvarjon", 100.99, "01/02")
+
+# def add(x, y):
+#     z = x + y
+#     return z
+# def subtract(x, y):
+#     z = x - y
+#     return z
+# def multiply(x, y):
+#     z = x * y
+#     return z
+# def divide(x, y):
+#     z = x / y
+#     return z
 #
-# # print(f"{number:.2f}")
-# print(cards)
+#
+# def add(x, y):
+#     z = x + y
+#     return z
+#
+#
+# print(add(1, 2))
+# print(subtract(8 , 2))
+# print(multiply(5, 2))
+# print(divide(9, 2))
+#
 
 
-# PYTHON number guessing game
+def create_name(first, last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " " + last
 
-import random
+full_name = create_name("Anvarjon", "Sheraliev")
 
-lowest_num = 1
-highest_num = 10
-answer = random.randint(lowest_num, highest_num)
-guesses = 0
-is_running = True
-
-print("Python Number Guessing Game")
-print(f"Select a number between {lowest_num} and {highest_num}")
-
-while is_running:
-    guess = input("enter your guess: ")
-    if guess.isdigit():
-        guess = int(guess)
-        guesses += 1
-        if guess < lowest_num or guess > highest_num:
-            print("That number is out of range")
-            print(f"Please select a number between {lowest_num} and {highest_num}")
-        elif guess < answer:
-            print("Too low! Try again")
-        elif guess > answer:
-            print("Too high! Try again!")
-        else:
-            print(f"CORRECT! The answer was {answer}")
-            print(f"Number of guesses: {guesses}")
-            is_running
-    else:
-        print("Invalid guess")
-        print(f"Please select a number between {lowest_num} and {highest_num}")
+print(full_name)
