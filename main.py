@@ -4,7 +4,7 @@ principle = 0
 rate = 0
 time = 0
 
-while True:
+while True"":
     # while principle <= 0:
     principle =float(input("Enter the principle amount: "))
     if principle < 0:
