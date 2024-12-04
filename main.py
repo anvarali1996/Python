@@ -1,34 +1,64 @@
-# DEFAULT ARGUMENTS
-# def net_price(list_price, discount = 0, tax=0.05):
-#     return list_price * (1 - discount) * (1 + tax)
+# Iretable
+
+# numbers = [1, 2, 4, 5, 6]
+# for number in reversed(numbers):
+#     print(number, end=" ")
+
+# name = "Anvarjon Sheraliev"
 #
-# # print(net_price(500))
-# # print(net_price(500, 0.1))
-# print(net_price(500, 0.1, 0))
+# for letter in name:
+#     print(letter.upper(), end="")
 
-
-# import time
-# def count(start, end):
-#     for x in range(start, end+1):
-#         print(x)
-#         time.sleep(1)
-#     print("DONE")
+# my_test = {"A": 1, 'B': 2, "C": 3}
 #
-# count(1, 10)
+# for key, value in my_test.items():
+#     # print(f"{key}: {value}")
+#     print(key, value)
 
-# KEY ARGUMENTS
 
-# def hello(greeting, title, first, last):
-#     print(f"{greeting} {title}{first} {last}")
+# //////=====----- MEMBERSHIP OPERATORS -----======//////
+
+# word = "APPLE"
 #
-# hello("Hello", title="Mr.", last="John", first="James")
+# letter = input("Guess a letter in the secret word: ")
+#
+# # if letter in word:
+# #     print(f"There is a {letter}")
+# # else:
+# #     print(f"{letter} was not found")
+#
+# if letter not in word:
+#     # print(f"There is a {letter}")
+#     print(f"{letter} was NOT found")
+#
+# else:
+#     print(f"{letter} was found")
 
-# for x in range(1, 11):
-#     print(x, end=" ")
+# students = {"Ali", "Bob", "Someone"}
+#
+# student = input("enter a student name: ")
+#
+# if student in students:
+#     print(f"{student} is student")
+# else:
+#     print(f"{student} was not found!!!")
 
-# print("1","2", "3", "4", "5", sep="-")
+# grades = {"Ali": 1, "Bob": "5-score", "Someone": "8 score"}
+# student = input("Enter the name of student: ")
+#
+# # if student in grades:
+# #     print(f"{student}'s grade is {grades[student]}")
+# # else:
+# #     print(f"{student} was not found")
+#
+# for key, value in grades.items():
+#     print(student)
+#     print(f"{key}: {value}")
 
-def get_phone(country, area, first, last):
-    return f"{country}-{area}-{first}-{last}"
-phone_num = get_phone(country=998, area=93, first=299, last=4343)
-print(phone_num)
+
+email = "info@anvarjon.eu"
+
+if "@" in email and "." in email:
+    print("Valid email")
+else:
+    print("Invalid email")
