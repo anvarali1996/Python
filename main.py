@@ -1,30 +1,61 @@
-# double = []
-# for i in range(1, 11):
-#     double.append(i * 2)
+# MATCH CASE STATEMENTS COMPREHENSION
+
+# today = int(input("Enter today: "))
+
+
+# def day_of_week(day):
+#     # today = input("Enter today: ")
+#     match day:
+#         case 1:
+#             return "It's Monday"
+#         case 2:
+#             return "It's Tuesday"
+#         case 3:
+#             return "It's Wednesday"
+#         case 4:
+#             return "It's Thursday"
+#         case 5:
+#             return "It's Friday"
+#         case 6:
+#             return "It's Saturday"
+#         case 7:
+#             return "It's Sunday"
+#         case _:
+#             return "Not a valid day!!!"
 #
-# print(double)
+# print(day_of_week(today))
 
-# numbers = [num for num in range(1, 11)]
-# double = [x * 2 for x in range(1, 11)]
-# triple = [x * 3 for x in range(1, 11)]
-# square = [x * x for x in range(1, 11)]
+
+# today = input("Enter today: ")
+# def day_of_week(day):
+#     # today = input("Enter today: ")
+#     match day:
+#         case "Monday":
+#             return "It's Monday"
+#         case "Tuesday":
+#             return "It's Tuesday"
+#         case "Wednesday":
+#             return "It's Wednesday"
+#         case "Thursday":
+#             return "It's Thursday"
+#         case "Friday":
+#             return "It's Friday"
+#         case "Saturday":
+#             return "It's Saturday"
+#         case "Sunday":
+#             return "It's Sunday"
+#         case _:
+#             return "Not a valid day!!!"
 #
-# print(numbers)
-# print(double)
-# print(triple)
-# print(square)
+# print(day_of_week(today))
 
-# fruits = ["apple", "orange", "strawberry", "pear"]
-# fruits = [i.upper() for i in fruits]
-# print(fruits)
-
-numbers = [1, -2, 3, -4, 5, -6, 7, 9, 8, 87, 98]
-positive_num = [num for num in numbers if num >= 0]
-negative_num = [num for num in numbers if num <= 0]
-even_num = [num for num in numbers if num % 2 == 0]
-odd_num = [num for num in numbers if num % 2 != 0]
-
-print(positive_num)
-print(f"Negative numbers: {negative_num}")
-print(even_num)
-print(odd_num)
+# def is_weekend(day):
+#     match day:
+#         case  "Saturday" | "Sunday":
+#             return  True
+#         case "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday":
+#             return False
+#         case _:
+#             return False
+#
+# print(is_weekend ("Sunday"))
